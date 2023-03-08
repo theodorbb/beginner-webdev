@@ -1,0 +1,671 @@
+@import url('https://fonts.googleapis.com/css2?family=Mitr:wght@200&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+#navigation-container {
+  display: flex;
+  background-color: white;
+  height: 60px;
+  padding: 0 20px;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+}
+
+.navigation-buttons {
+  list-style-type: none;
+  margin: 0;
+  padding: 5px 8%;
+  overflow: hidden;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 50vw;
+}
+
+.logo-container {
+  align-items: center;
+  display: flex;
+  width: 25vw;
+  justify-content: center;
+}
+
+.img-logo {
+  width: 50px;
+}
+
+.logo-name {
+  cursor: pointer;
+  font-size: 20px;
+  font-family: "Mitr", sans-serif;
+}
+
+.navigation-buttons a{
+  position: relative;
+}
+
+.navigation-buttons li,
+a {
+  font-family: "Mitr", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  color: black;
+  text-decoration: none;
+  font-weight: bolder;
+}
+
+.navigation-buttons a:hover {
+  color: orangered;
+ }
+
+ a:before {    
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color:orangered;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+.navigation-buttons a:hover:before{
+  visibility: visible;
+  width: 100%;
+}
+
+.cart-container {
+  width: 480px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cart-button {
+  display: block;
+  font-family: "Mitr", sans-serif;
+  font-size: 14px;
+  color: white;
+  background-color: orangered;
+  text-decoration: none;
+  font-weight: bold;
+  border: 0;
+  border-radius: 30px;
+  line-height: 2;
+  cursor: pointer;
+  padding: 5px 10px;
+}
+
+.cart-button i {
+  background-color: orangered;
+  margin-right: 5px;
+}
+
+.cart-button i:hover {
+  background-color: rgba(223, 68, 11, 0.781);
+}
+
+.cart-button:hover {
+  background-color: rgba(223, 68, 11, 0.781);
+}
+
+.home-background {
+  width: 100vw;
+  height: auto;
+  background-image: url(hero.jpg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-content {
+  width: 420px;
+  height: 280px;
+  padding: 10px 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 5px 5px 20px 2px #4442425b;
+  border-radius: 20px;
+  background-color: white;
+  margin-top: 30px;
+}
+
+.home-content-title {
+  font-family: "Mitr", sans-serif;
+  font-weight: bolder;
+  font-size: 40px;
+  background-color: white;
+  line-height: 40px;
+  margin-top: -10px;
+}
+
+.home-content-info {
+  font-family: "raleway", sans-serif;
+  font-size: medium;
+  font-weight: 100;
+  background-color: white;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.home-content-button {
+  display: block;
+  font-family: "Mitr", sans-serif;
+  font-size: 14px;
+  color: white;
+  background-color: orangered;
+  text-decoration: none;
+  font-weight: bold;
+  border: 0;
+  border-radius: 30px;
+  line-height: 2;
+  cursor: pointer;
+  padding: 14px 42px;
+  margin-top: 20px;
+}
+
+.home-content-button:hover{
+  background-color: rgba(223, 68, 11, 0.781);
+}
+
+/* home information*/
+
+.home-info {
+  display: flex;
+  height: 10vh;
+  padding: 0 20px;
+  justify-content: space-between;
+  margin: 40px;
+  align-items: center;
+}
+
+
+.home-info-phone i {
+  background-color: white;
+  color: orangered;
+}
+
+.number {
+  color: orangered;
+  font-family: 'Mitr';
+  font-weight: bolder;
+  font-size: 12px;
+}
+
+.info-number {
+  font-size: 13px;
+  font-family: "raleway", sans-serif;
+}
+
+.home-info-phone {
+  margin-left: 200px;
+}
+
+.home-info-adress i {
+  background-color: white;
+  color: orangered;
+}
+
+.adress {
+  color: orangered;
+  font-family: 'Mitr';
+  font-weight: bolder;
+  font-size: 12px;
+}
+
+.info-adress {
+  font-size: 13px;
+  font-family: "raleway", sans-serif;
+}
+
+.home-info-program i {
+  background-color: white;
+  color: orangered;
+}
+
+.home-info-program {
+  margin-right: 200px;
+}
+
+.program {
+  color: orangered;
+  font-family: 'Mitr';
+  font-weight: bolder;
+  font-size: 12px;
+}
+
+.info-program {
+  font-size: 13px;
+  font-family: "raleway", sans-serif;
+}
+
+.home-info-phone {
+  width: 130px;
+}
+
+.home-info-adress {
+  width: 130px;
+}
+
+.home-info-program {
+  width: 130px;
+}
+
+/* section about */
+
+#about {
+  width: 100vw;
+  height: 80vh;
+  display: flex;
+}
+
+.about-left {
+  background-image: url(about.jpg);
+  background-size: cover;
+}
+
+.about-right {
+  background-color: rgb(238, 145, 111);
+  display: flex;
+  align-items: center;
+}
+
+.about-item {
+  width: 50%;
+  height: 100%;
+}
+
+.about-content {
+  width: 500px;
+  height: 250px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: -90px;
+  border-radius: 30px;
+  box-shadow: 5px 5px 20px 2px #4442425b;
+  background-color: white;
+}
+
+.about-content-title {
+  font-family: "mitr", sans-serif;
+  font-size: 40px;
+  font-weight: bolder;
+  margin-top: 20px;
+}
+
+.about-content-text {
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  font-family: "raleway", sans-serif;
+  font-size: 13px;
+}
+
+/*sectin services*/
+
+.background-services {
+  background-color: rgb(250, 235, 221);
+  width: 100vw;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#services {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  background-color: rgb(250, 235, 221);
+}
+
+.services-icon {
+  height: 60px;
+}
+
+.food-factory-services {
+  display: flex;
+  align-items: center;
+  margin-top: 60px;
+  margin-bottom: 100px;
+  background-color: rgb(250, 235, 221);
+  padding: 70px;
+}
+
+.services-title {
+  margin-top: 50px;
+  background-color: rgb(250, 235, 221);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 33px;
+  font-family: "mitr", sans-serif;
+}
+
+.services-subtitle {
+  margin-top: 10px;
+  font-family: "raleway", sans-serif;
+  font-size: 14px;
+  margin-left: 30px;
+}
+
+.backgroundservices {
+  background-color: rgb(250, 235, 221);
+}
+
+.services-healthy-meal {
+  margin-right: 5px;
+}
+
+.services-fast-food {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.services-delicious-coffee {
+  margin-left: 5px;
+}
+
+.servicestitle {
+  font-family: "mitr", sans-serif;
+  font-size: 20px;
+  margin-top: 15px;
+  margin-bottom: 20px;
+  padding: 10px;
+  text-align: center;
+  line-height: 20px;
+}
+
+.servicessubtitle {
+  font-family: "raleway", sans-serif;
+  font-size: 11px;
+}
+
+.square-prop {
+  height: 250px;
+  width: 250px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+}
+
+.square-prop:hover {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.square-prop:hover .servicestitle {
+  color: orangered;
+}
+
+/* section menu */
+
+.background-menu {
+  background-color: rgba(68, 26, 17, 0.795);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-top {
+  display: flex;
+  width: 700px;
+  justify-content: space-between;
+}
+
+.menu-title {
+  font-family: "mitr", sans-serif;
+  font-size: 20px;
+  color: white;
+  font-size: 33px;
+  font-family: "mitr", sans-serif;
+}
+
+.menu-subtitle {
+  font-family: "raleway", sans-serif;
+  font-size: 11px;
+  width: 270px;
+  color: rgba(222, 184, 135, 0.336);
+  padding: 20px 0px;
+}
+
+.menu-button {
+  display: block;
+  font-family: "Mitr", sans-serif;
+  font-size: 14px;
+  color: white;
+  background-color: orangered;
+  text-decoration: none;
+  font-weight: bold;
+  border: 0;
+  border-radius: 30px;
+  line-height: 2;
+  cursor: pointer;
+  padding: 5px 10px;
+  width: 120px;
+}
+
+.menu-button:hover {
+  background-color: rgba(223, 68, 11, 0.781);
+}
+
+.carousel{
+  display: flex;
+  width: 700px;
+}
+
+.carousel-image{
+  border-radius: 50%;
+  height: 150px;
+  width: 150px;
+}
+
+.carousel-title{
+  font-family: "Mitr",sans-serif;
+  font-weight: bolder;
+  padding: 10px;
+  font-size: 20px;
+}
+
+.carousel-subtitle{
+  width: 150px;
+  font-size: 11px;
+  font-family: "raleway",sans-serif;
+  align-items: center;
+}
+
+.carousel-order-now{
+  font-family: "Mitr",sans-serif;
+  font-weight: bolder;
+  font-size:12px ;
+  padding: 2px 10px;
+ color: orangered;
+ text-decoration: orangered;
+ border-bottom: 2px solid orangered;
+}
+
+.carousel-section{
+  background-color: white;
+  display: flex !important;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 230px !important;
+  height: 350px !important;
+  border-radius: 7px;
+  margin: 2px;
+}
+
+.carousel-price{
+  font-size: 11px;
+  font-family: "raleway",sans-serif;
+  background-color: orangered;
+  color: white;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  position: absolute;
+  margin-top: -40px;
+  margin-right: -70px;
+}
+
+.carousel-root {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 740px;
+}
+
+.carousel-arrow {
+  position: absolute;
+  cursor: pointer;
+}
+
+.carousel-arrow i{
+  color:grey;
+}
+
+.carousel-arrow i:hover{
+  color: white;
+}
+
+.carousel-arrow-left {
+  left: 0px;
+}
+
+.carousel-arrow-right {
+  right: 0px;
+}
+
+.carousel-root {
+  position: relative;
+}
+
+/*section contact*/
+
+#contact {
+  background-color: white;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+}
+
+.contact-image-container {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.contact-image {
+  height: 100%;
+  width: 30vw;
+  margin-top: 80px;
+  border-radius: 30px;
+}
+
+.contact-info {
+  width: 50%;
+  margin-top: 80px;
+  margin-left: 80px;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-button {
+  display: block;
+  font-family: "Mitr", sans-serif;
+  font-size: 14px;
+  color: white;
+  background-color: orangered;
+  text-decoration: none;
+  font-weight: bold;
+  border: 0;
+  border-radius: 30px;
+  line-height: 2;
+  cursor: pointer;
+  height: 40px;
+  width: 350px;
+  margin-top: 40px;
+}
+
+.contact-button:hover {
+  background-color: rgba(223, 68, 11, 0.781);
+}
+
+.contact-title {
+  font-family: "Mitr", sans-serif;
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+
+.contact-subtitle {
+  font-family: "raleway", sans-serif;
+  font-size: 15px;
+  margin-bottom: 30px;
+  width: 350px;
+}
+
+.number-of-guests {
+  border-radius: 30px;
+  height: 40px;
+  width: 350px;
+  margin-top: 10px;
+  margin-bottom: 13px;
+  padding: 5px 15px;
+}
+
+.calendar {
+  border-radius: 30px;
+  height: 40px;
+  width: 172px;
+  padding: 5px 15px;
+}
+
+.breakfast {
+  border-radius: 30px;
+  height: 40px;
+  width: 172px;
+  padding: 5px 15px;
+}
+
+.phone-number {
+  border-radius: 30px;
+  height: 40px;
+  width: 350px;
+  margin-top: 13px;
+  margin-bottom: 13px;
+  padding: 5px 15px;
+}
+
+.message {
+  border-radius: 20px;
+  width: 350px;
+  line-height: 14px;
+  padding: 15px;
+}
+
+.contact-info input:focus,
+.contact-info textarea:focus{
+  border: 1px solid orangered;
+}
